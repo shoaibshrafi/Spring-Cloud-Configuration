@@ -21,7 +21,6 @@ Update git url in `/spring-server-config/src/main/resources/application.properti
 <b>Second, start the server, as follows:</b>
 <br><br>
 $ `cd spring-server-config`
-<br>
 $ `mvn spring-boot:run`
 <br><br>
 It will start cloud server with url: `http://localhost:8888`
@@ -42,14 +41,14 @@ It will show the result <b>Hello It's Cloud Configuration</b>
 <br><br>
 Now update the centralized properties file and commit as follows:
 <br><br>
-1) `git init`
+1) `git init`<br>
 2) `vim spring-cloud-centralize-messages.properties`
     <br>
     Press I to conver in insert mode and update following key pair
     <br>
-3) `message=Hello It's Spring Cloud Configuration`
-4) `it add spring-cloud-centralize-messages.properties`
-5) `git commit -m 'My Second Commit'`
+3) `message=Hello It's Spring Cloud Configuration`<br>
+4) `it add spring-cloud-centralize-messages.properties`<br>
+5) `git commit -m 'My Second Commit'`<br>
 <br><br>
 Visit URL again : `http://localhost:8889/message`
 It will show the result <b>Hello It's Spring Cloud Configuration</b>
